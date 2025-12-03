@@ -1,0 +1,29 @@
+public class Number6{
+    public static void main(String[] args) {
+
+        int[] arr = {5, 8, 3, 9, 2, 7, 11};
+
+        System.out.print("Array: ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+
+        int sum = 0;
+        int count = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0) { 
+                sum =sum+arr[i];
+                count++;
+            }
+        }
+
+        if (count > 0) {
+            double average = (double) sum / count;
+            System.out.println("Average of odd numbers: " + average);
+        } else {
+            System.out.println("No odd numbers found.");
+        }
+    }
+}
