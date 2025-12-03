@@ -1,0 +1,25 @@
+public class Num13{
+    public static void main(String[] args) {
+
+        int[] grades = { 80, 70, 90, 65, 75, 88, 60, 77 };
+        int passed = 0;
+        int failed = 0;
+
+        System.out.print("Grades: ");
+        for (int i = 0; i < grades.length; i++) {
+            System.out.print(grades[i] + " ");
+        }
+        System.out.println();
+
+        for (int i = 0; i < grades.length; i++) {
+            if (grades[i] >= 75) {
+                passed++;
+            } else {
+                failed++;
+            }
+        }
+
+        System.out.println("Number of students who passed: " + passed);
+        System.out.println("Number of students who failed: " + failed);
+    }
+}
