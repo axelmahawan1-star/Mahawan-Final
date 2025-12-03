@@ -1,4 +1,4 @@
-public class Number4 {
+public class Num4 {
     public static void main(String[] args) {
 
         int[] arr = {5, 2, 9, 1, 7};
